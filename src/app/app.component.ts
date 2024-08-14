@@ -6,8 +6,30 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'angular-course';
+  data = {
+    title: 'Angular Core Deep Dive',
+  };
+
+  defaultNumber = 100;
+
+  defaultName = 'Jesus';
+
+  onLogoClicked() {
+    alert('Hello World');
+  }
+
+  onKeyUp(newTitle: string) {
+    this.data.title = newTitle;
+  }
+
+  returnNumber(newNumber: number) {
+    this.defaultNumber = newNumber;
+  }
+
+  returnName(newName: string) {
+    this.defaultName = newName;
+  }
 }
