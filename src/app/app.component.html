@@ -1,6 +1,6 @@
 <h1>Hello, {{ data.title }}</h1>
 
-<img (click)="onLogoClicked()" width="100" src="../favicon.ico" />
+<img (click)="onLogoClicked()" width="100" src="../assets/desert_cat.png" />
 
 <hr />
 
@@ -21,12 +21,12 @@
   [value]="defaultNumber"
 />
 <hr />
-<h2>Name: {{defaultName}} </h2>
-<input 
-  #inputName 
+<h2>Name: {{ defaultName }}</h2>
+<input
+  #inputName
   (keyup)="returnName(inputName.value)"
   type="text"
   [value]="defaultName"
- />
+/>
 
 <router-outlet />

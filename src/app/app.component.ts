@@ -18,7 +18,7 @@ export class AppComponent {
   defaultName = 'Jesus';
 
   onLogoClicked() {
-    alert('Hello World');
+    alert('Hello Chester');
   }
 
   onKeyUp(newTitle: string) {
