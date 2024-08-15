@@ -1,11 +1,12 @@
 <div class="courses">
   <div class="course-card">
     <div class="course-title">
-      {{title}}
+      <!-- {{title}} -->
+      {{ version?.description }}
     </div>
-    <img width="200" src={{img}} alt="Desert Cat">
+    <img width="200" src="{{ version?.iconUrl }}" alt="Desert Cat" />
     <div class="course-description">
-      {{description}}
+      {{ version?.longDescription }}
     </div>
   </div>
 </div>

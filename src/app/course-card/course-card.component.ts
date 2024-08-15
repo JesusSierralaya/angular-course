@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CatVersions } from '../interfaces/cat-versions';
 
 @Component({
   selector: 'app-course-card',
@@ -8,14 +9,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './course-card.component.css'
 })
 export class CourseCardComponent {
-  @Input()
-  title: string | undefined
 
   @Input()
-  img: string | undefined
-
-  @Input()
-  description: string | undefined
+  version: CatVersions | undefined
 
   constructor(){}
 }
