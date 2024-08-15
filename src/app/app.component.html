@@ -1,6 +1,11 @@
-<div class="top-menu"><img (click)="onLogoClicked()" src="assets/desert_cat_logo.png"  class="logo"></div>
-
-<h1>Hello, {{ data.title }}</h1>
+<div class="top-menu">
+  <img
+    (click)="onLogoClicked()"
+    src="assets/desert_cat_logo.png"
+    class="logo"
+  />
+  <h1 class="title">Hello, {{ data.title }}</h1>
+</div>
 
 <input
   #titleInput
@@ -11,23 +16,23 @@
 />
 <hr />
 
-<h2>Age: {{ defaultNumber }}</h2>
-<input
-  #inputNumber
-  (keyup)="returnNumber(inputNumber.valueAsNumber)"
-  type="number"
-  [value]="defaultNumber"
-/>
-<h2>Name: {{ defaultName }}</h2>
-<input
-  #inputName
-  (keyup)="returnName(inputName.value)"
-  type="text"
-  [value]="defaultName"
-/>
+<div class="inputs">
+  <h2>Age: {{ defaultNumber }}</h2>
+  <input
+    #inputNumber
+    (keyup)="returnNumber(inputNumber.valueAsNumber)"
+    type="number"
+    [value]="defaultNumber"
+  />
+  <h2>Name: {{ defaultName }}</h2>
+  <input
+    #inputName
+    (keyup)="returnName(inputName.value)"
+    type="text"
+    [value]="defaultName"
+  />
+</div>
 
 <hr />
-
-
 
 <router-outlet />
