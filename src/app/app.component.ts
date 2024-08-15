@@ -10,12 +10,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   data = {
-    title: 'Angular Core Deep Dive',
+    title: 'Change the title',
   };
 
   defaultNumber = 100;
 
-  defaultName = 'Jesus';
+  defaultName = 'Chester';
 
   onLogoClicked() {
     alert('Hello Chester');
