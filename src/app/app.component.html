@@ -35,8 +35,23 @@
 
 <hr />
 
-<app-course-card></app-course-card>
-<app-course-card></app-course-card>
-<app-course-card></app-course-card>
+<app-course-card
+  [title]="desertChester.description"
+  [img]="desertChester.iconUrl"
+  [description]="desertChester.longDescription"
+></app-course-card>
+
+<app-course-card
+  [title]="spaceChester.description"
+  [img]="spaceChester.iconUrl"
+  [description]="spaceChester.longDescription"
+></app-course-card>
+
+
+<app-course-card
+  [title]="techChester.description"
+  [img]="techChester.iconUrl"
+  [description]="techChester.longDescription"
+></app-course-card>
 
 <router-outlet />
