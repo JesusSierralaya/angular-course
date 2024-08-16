@@ -13,6 +13,9 @@ export class CatVersionCardComponent {
   @Input()
   version: CatVersions | undefined
 
+  @Input()
+  index: number | undefined
+
   @Output()
   versionSelected = new EventEmitter<CatVersions>()
 

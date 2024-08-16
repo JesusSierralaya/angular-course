@@ -35,13 +35,15 @@
 
 <hr />
 
-@for (chesterVersion of chesterVersions; track chesterVersion.id) {
+@for ( chesterVersion of chesterVersions; track chesterVersion.id; let index
+=$index ) {
 <app-course-card
+  [index]="index"
   (versionSelected)="onVersionSelected($event)"
   [version]="chesterVersion"
 />
 } @empty {
-  <h1>No Chester versions to show!</h1>
+<h1>No Chester versions to show!</h1>
 }
 
 <router-outlet />
