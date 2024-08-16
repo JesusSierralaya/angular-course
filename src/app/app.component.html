@@ -36,7 +36,8 @@
 <hr />
 
 @for ( chesterVersion of chesterVersions; track chesterVersion.id; let index
-=$index ) {
+=$index; let count = $count ) {
+  <h1>Count: {{count}} </h1>
 <app-course-card
   [index]="index"
   (versionSelected)="onVersionSelected($event)"
