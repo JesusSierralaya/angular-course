@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CourseCardComponent } from "./course-card/course-card.component";
+import { CourseCardComponent } from './course-card/course-card.component';
 import { CHESTER_VERSIONS } from '../assets/db-data';
+import { CatVersions } from './interfaces/cat-versions';
 
 @Component({
   selector: 'app-root',
@@ -41,4 +42,8 @@ export class AppComponent {
   spaceChester = CHESTER_VERSIONS[1]
 
   techChester = CHESTER_VERSIONS[2]
+
+  onVersionSelected(version: CatVersions) {
+    console.log('App component - click event ', version);
+  }
 }

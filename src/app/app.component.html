@@ -35,10 +35,19 @@
 
 <hr />
 
-<app-course-card [version]="desertChester"></app-course-card>
+<app-course-card
+  (versionSelected)="onVersionSelected($event)"
+  [version]="desertChester"
+></app-course-card>
 
-<app-course-card [version]="spaceChester"></app-course-card>
+<app-course-card
+  (versionSelected)="onVersionSelected($event)"
+  [version]="spaceChester"
+></app-course-card>
 
-<app-course-card [version]="techChester"></app-course-card>
+<app-course-card
+  (versionSelected)="onVersionSelected($event)"
+  [version]="techChester"
+></app-course-card>
 
 <router-outlet />
