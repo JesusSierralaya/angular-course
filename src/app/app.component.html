@@ -40,6 +40,8 @@
   (versionSelected)="onVersionSelected($event)"
   [version]="chesterVersion"
 />
+} @empty {
+  <h1>No Chester versions to show!</h1>
 }
 
 <router-outlet />

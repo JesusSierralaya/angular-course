@@ -38,7 +38,9 @@ export class AppComponent {
 
   // Chester versions for cards
 
-  chesterVersions = CHESTER_VERSIONS
+  // chesterVersions = CHESTER_VERSIONS
+  // chesterVersions: CatVersions[] = [] 
+  chesterVersions: CatVersions[] = [...CHESTER_VERSIONS]
 
   onVersionSelected(version: CatVersions) {
     console.log('App component - click event ', version);
