@@ -25,3 +25,12 @@ course-card {
 .course-card img {
     border-radius: 4px;
 }
+
+button {
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+    background: #151B54;
+    color: white;
+    border-radius: 4px;
+}
