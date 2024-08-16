@@ -37,11 +37,8 @@ export class AppComponent {
   }
 
   // Chester versions for cards
-  desertChester = CHESTER_VERSIONS[0]
 
-  spaceChester = CHESTER_VERSIONS[1]
-
-  techChester = CHESTER_VERSIONS[2]
+  chesterVersions = CHESTER_VERSIONS
 
   onVersionSelected(version: CatVersions) {
     console.log('App component - click event ', version);

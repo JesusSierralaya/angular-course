@@ -35,19 +35,11 @@
 
 <hr />
 
+@for (chesterVersion of chesterVersions; track chesterVersion.id) {
 <app-course-card
   (versionSelected)="onVersionSelected($event)"
-  [version]="desertChester"
-></app-course-card>
-
-<app-course-card
-  (versionSelected)="onVersionSelected($event)"
-  [version]="spaceChester"
-></app-course-card>
-
-<app-course-card
-  (versionSelected)="onVersionSelected($event)"
-  [version]="techChester"
-></app-course-card>
+  [version]="chesterVersion"
+/>
+}
 
 <router-outlet />
