@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CourseCardComponent } from './course-card/course-card.component';
+import { CatVersionCardComponent } from './cat-version-card/course-card.component';
 import { CHESTER_VERSIONS } from '../assets/db-data';
 import { CatVersions } from './interfaces/cat-versions';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CourseCardComponent],
+  imports: [RouterOutlet, CatVersionCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

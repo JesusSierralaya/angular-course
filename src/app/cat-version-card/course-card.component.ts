@@ -5,10 +5,10 @@ import { CatVersions } from '../interfaces/cat-versions';
   selector: 'app-course-card',
   standalone: true,
   imports: [],
-  templateUrl: './course-card.component.html',
-  styleUrl: './course-card.component.css'
+  templateUrl: './cat-version-card.component.html',
+  styleUrl: './cat-version-card.component.css'
 })
-export class CourseCardComponent {
+export class CatVersionCardComponent {
 
   @Input()
   version: CatVersions | undefined
