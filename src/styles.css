@@ -14,3 +14,11 @@ app-verse-card.is-last {
     border-bottom: 5px solid red;
     padding-bottom: -20px;
 }
+
+app-verse-card.is-even {
+    background: lightgray;
+}
+
+app-verse-card.is-odd {
+    background: lightblue;
+}
