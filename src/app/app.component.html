@@ -35,18 +35,17 @@
 
 <hr />
 
-@for ( chesterVersion of chesterVersions; track chesterVersion.id; let index
-=$index; let count = $count ; let first = $first; let last = $last; let even =
-$even; let odd = $odd) {
+@for ( chesterVersion of chesterVersions; track chesterVersion.id) {
 
 <app-verse-card
-  [index]="index"
-  [class.is-first]="first"
-  [class.is-last]="last"
-  [class.is-even]="even"
-  [class.is-odd]="odd"
-  (versionSelected)="onVersionSelected($event)"
+  [index]="$index"
   [version]="chesterVersion"
+  [class.is-first]="$first"
+  [class.is-last]="$last"
+  [class.is-even]="$even"
+  [class.is-odd]="$odd"
+
+  (versionSelected)="onVersionSelected($event)"
 />
 
 } @empty {
