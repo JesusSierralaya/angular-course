@@ -36,12 +36,12 @@
 <hr />
 
 @for ( chesterVersion of chesterVersions; track chesterVersion.id; let index
-=$index; let count = $count ) {
-
-  <h1>Count: {{count}} </h1>
+=$index; let count = $count ; let first = $first; let last = $last) {
 
 <app-verse-card
   [index]="index"
+  [class.is-first]="first"
+  [class.is-last]="last"
   (versionSelected)="onVersionSelected($event)"
   [version]="chesterVersion"
 />
