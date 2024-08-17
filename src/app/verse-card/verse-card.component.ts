@@ -2,11 +2,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CatVersions } from '../interfaces/cat-versions';
 
 @Component({
-  selector: 'app-course-card',
+  selector: 'app-verse-card',
   standalone: true,
   imports: [],
-  templateUrl: './cat-version-card.component.html',
-  styleUrl: './cat-version-card.component.css'
+  templateUrl: './verse-card.component.html',
+  styleUrl: './verse-card.component.css'
 })
 export class CatVersionCardComponent {
 

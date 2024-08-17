@@ -37,12 +37,15 @@
 
 @for ( chesterVersion of chesterVersions; track chesterVersion.id; let index
 =$index; let count = $count ) {
+
   <h1>Count: {{count}} </h1>
-<app-course-card
+
+<app-verse-card
   [index]="index"
   (versionSelected)="onVersionSelected($event)"
   [version]="chesterVersion"
 />
+
 } @empty {
 <h1>No Chester versions to show!</h1>
 }

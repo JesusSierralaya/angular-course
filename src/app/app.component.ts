@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CatVersionCardComponent } from './cat-version-card/course-card.component';
+import { CatVersionCardComponent } from './verse-card/verse-card.component';
 import { CHESTER_VERSIONS } from '../assets/db-data';
 import { CatVersions } from './interfaces/cat-versions';
 
