@@ -3,4 +3,5 @@ export interface CatVersions {
   description: string;
   iconUrl: string;
   longDescription: string;
+  type: string;
 }

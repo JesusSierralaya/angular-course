@@ -25,3 +25,15 @@ button {
     color: white;
     border-radius: 4px;
 }
+
+.course-card.ancient{
+    border: dashed yellow
+}
+
+.course-card.futuristic{
+    border: dashed blue
+}
+
+.course-card.modern{
+    border: dashed green
+}
