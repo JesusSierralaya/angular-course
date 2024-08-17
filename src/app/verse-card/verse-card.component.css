@@ -37,3 +37,25 @@ button {
 .course-card.modern{
     border: dashed green
 }
+
+.category {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  font-size: 16px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 6px 12px;
+  display: inline-block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(5.05) rotate(360deg);
+
+}

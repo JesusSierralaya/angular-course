@@ -16,6 +16,23 @@
       {{ version?.longDescription }}
     </div>
 
+    <div class="version-category">
+      @switch (version?.type) {
+        @case ('ancient') {
+          <div class="category">ancient</div>
+        }
+        @case ('modern') {
+          <div class="category">modern</div>
+        }
+        @case ('futuristic') {
+          <div class="category">futuristic</div>
+        }
+        @default {
+          <div class="category">unknown</div>
+        }
+      }
+    </div>
+
     <button (click)="onVersionViewed()">View Version</button>
 
   </div>
