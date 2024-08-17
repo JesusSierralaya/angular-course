@@ -1,1 +1,0 @@
-app-verse-card{display:block;max-width:400px;margin:50px auto}app-verse-card.is-first{border-top:5px solid grey;padding-top:20px}app-verse-card.is-last{border-bottom:5px solid red;padding-bottom:-20px}app-verse-card.is-even{background:#d3d3d3}app-verse-card.is-odd{background:#add8e6}
