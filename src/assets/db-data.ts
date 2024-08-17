@@ -26,4 +26,11 @@ export const CHESTER_VERSIONS: any = [
         longDescription: "Chester is where the samurai conquered the world",
         type: 'ancient'
     },
+    {
+        id: 5,
+        description: "Primal Chester",
+        iconUrl: 'assets/primal_chester.webp',
+        longDescription: "Chester is primal creature in a futuristic city",
+        type: 'unknown'
+    },
 ]
