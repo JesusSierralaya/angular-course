@@ -17,4 +17,9 @@ export const CHESTER_VERSIONS: any = [
         iconUrl: 'assets/tech_chester.webp',
         longDescription: "Chester has many tech parts; it is a cat from the future."
     },
+    {
+        id: 4,
+        description: "Samurai Chester",
+        longDescription: "Chester is where the samurai conquered the world" 
+    },
 ]

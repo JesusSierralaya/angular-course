@@ -5,7 +5,13 @@
       {{index}}
       {{ version?.description }}
     </div>
+
+    @if (version?.iconUrl) {
     <img width="200" src="{{ version?.iconUrl }}" alt="Desert Cat" />
+    } @else {
+      <h2>No image available!</h2>
+    }
+
     <div class="course-description">
       {{ version?.longDescription }}
     </div>
